@@ -1,0 +1,30 @@
+
+.NavBar{
+  background: #23232e;
+  position: static
+}
+
+.cards {
+  display:flex;
+  background: #2a2a3a; /*23232e*/
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
+
+.cardGeral{
+  margin-left: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.cardGeral:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.mySearch{
+  background-color: aliceblue;
+}
