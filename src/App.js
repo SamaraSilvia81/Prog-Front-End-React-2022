@@ -81,7 +81,7 @@ function ComboBox() {
                 id="combo-box-demo"
                 options={genreBooks}
                 sx={{ width: 300 }}
-                renderInput={(params) => <TextField {...params} label="Movie" />}
+                renderInput={(params) => <TextField {...params} label="Gender" />}
               />
             </Search>
           </Toolbar>
