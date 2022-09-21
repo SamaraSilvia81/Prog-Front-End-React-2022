@@ -27,7 +27,7 @@ const Search = styled('div')(({ theme }) => ({
   },
 }));
 
-const genreBooks = [
+const genderBooks = [
   'Romance',
   'Fantasia',
   'Suspense',
@@ -37,7 +37,7 @@ const genreBooks = [
 
 function ComboBox() {
 
-  const [value, setValue] = React.useState(genreBooks[-1]);
+  const [value, setValue] = React.useState(genderBooks[-1]);
   const [inputValue, setInputValue] = React.useState('');
 
 
@@ -63,7 +63,7 @@ function ComboBox() {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              LIBRARY STUDIO X
+             SAM'S LIBRARY
             </Typography>
 
             <Search>
@@ -79,7 +79,7 @@ function ComboBox() {
                   setInputValue(newInputValue);
                 }}
                 id="combo-box-demo"
-                options={genreBooks}
+                options={genderBooks}
                 sx={{ width: 300 }}
                 renderInput={(params) => <TextField {...params} label="Gender" />}
               />
@@ -94,7 +94,7 @@ function ComboBox() {
 
       <div className='Cards'> 
 
-        { value !== genreBooks[0] ? null : (
+        { value !== genderBooks[0] ? null : (
           <CollectionRomance/>
         )}
         
